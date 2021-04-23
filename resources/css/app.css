@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Futura";
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/Futura/Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Futura";
+    font-weight: 100;
+    src: url(../fonts/Futura/Light.ttf);
+  }
+
+  @font-face {
+    font-family: "Futura";
+    font-style: 600;
+    src: url(../fonts/Futura/Medium.ttf);
+  }
+
+  @font-face {
+    font-family: "Futura";
+    font-style: 700;
+    src: url(../fonts/Futura/Bold.ttf);
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+  }
+
+  .btn{
+    @apply px-6 py-3 bg-blue-500 text-white border-2 border-blue-500 uppercase text-sm tracking-wide font-normal rounded-sm;
+  }
+}
+
+*{
+  font-family: "Futura", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
