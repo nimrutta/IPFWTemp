@@ -45,17 +45,3 @@
         </div>
     </div>
 </section>
-
-<script>
-
-    function goWeb(){
-
-        var web_section= $('.ipf-web-services');
-        $('body,html').animate({
-                'scrollTop': web_section.offset().top
-            }, 1000
-        );
-
-    }
-
-</script>

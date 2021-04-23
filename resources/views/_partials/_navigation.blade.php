@@ -1,4 +1,4 @@
-<section class="fixed inset-x-0 bg-white">
+<section class="absolute inset-x-0 bg-white">
     <div class="container flex items-center justify-between">
         <div class="flex items-center pt-4">
             <a href="{{ url('/') }}" class="py-3">
