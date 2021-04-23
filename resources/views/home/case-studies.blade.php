@@ -38,7 +38,7 @@
 
 <section class="flex items-center py-8 relative">
     <div class="w-1/2 absolute top-0 right-0 h-full bg-gray-100">
-        <img class="w-full h-full object-cover" src="{{asset('img/chomoka-bg.png')}}" alt="" />
+        <img class="w-full h-full object-cover" src="{{asset('img/chomoka-bg.jpg')}}" alt="" />
     </div>
 
     <div class="pt-12 pb-16 relative w-full flex flex-col">
@@ -72,7 +72,7 @@
                                 <div class="rounded-full mr-4 w-2 h-2 border opacity-30"></div>
                                 <div class="rounded-full w-8 h-1.5 border opacity-30"></div>
                             </div>
-                            <img class="w-full h-full rounded-3xl" src="{{asset('img/chomoka-app.png')}}" alt="" />
+                            <img class="w-full h-full rounded-3xl" src="{{asset('img/chomoka-app.jpg')}}" alt="" />
                         </div>
                     </div>
                 </div>
