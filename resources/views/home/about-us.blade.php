@@ -1,6 +1,6 @@
 <section class="ipf-home flex flex-col h-screen">
     <div class="pt-0 flex-1 container flex items-center">
-        <div class="flex-1">
+        <div class="flex-1" style="margin-top: 7rem">
             <h1 class="text-3xl font-meddium mb-6">
                 /About Us<span class="for-lg">
             </h1>
@@ -18,7 +18,7 @@
             </button>
         </div>
         <div class="pt-12 px-12">
-            <div class="relative" style="width: 380px">
+            <div class="w-72 bg-gray-100 mb-8 relative" style="width: 30rem; height: 20rem">
             </div>
         </div>
     </div>
@@ -39,7 +39,19 @@
                     $countries->title = 'Countries Reached';
                     $countries->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
-                    $cards = array($countries);
+                    $solutions = new Card();
+                    $solutions->imageUrl = 'red';
+                    $solutions->statistics = '193+';
+                    $solutions->title = 'Solutions Created';
+                    $solutions->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
+
+                    $customers = new Card();
+                    $customers->imageUrl = 'red';
+                    $customers->statistics = '123,768+';
+                    $customers->title = 'People using our products';
+                    $customers->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
+
+                    $cards = array($countries, $solutions, $customers);
             @endphp
 
             @foreach($cards as $card)
@@ -50,7 +62,7 @@
                 <div style="width: 23.8125rem">
                     <div class="w-72 bg-gray-100 mb-8" style="height: 13rem"></div>
                     <h1 class="text-7xl font-medium mb-4 block" style="color: #0D3462">{{$card->statistics}}</h1>
-                    <h3 class="text-3xl font-medium opacity-75">{{$card->title}}</h3>
+                    <h3 class="text-3xl font-medium" style="opacity: 0.75">{{$card->title}}</h3>
                     <p class="text-xl">{{$card->description}}</p>
                 </div>
             @endforeach
