@@ -1,26 +1,24 @@
 <section class="ipf-home flex flex-col h-screen">
     <div class="pt-0 flex-1 container flex items-center">
         <div class="flex-1">
-            <h1 class="text-3xl font-meddium mb-4">
+            <h1 class="text-3xl font-meddium mb-6">
                 /About Us<span class="for-lg">
             </h1>
-            <p class="max-w-xl mb-9 text-xl leading-relaxed">
-                We are focused on building and innovating digital solutions for <a href="#" class="underline text-blue-500">impact-oriented</a> businesses and initiatives that link people with social and economic opportunities in Africa.
+            <p class="max-w-xl w-1/3 mb-9 text-xl leading-relaxed">
+                We design, develop and innovate impactful digital solutions for businesses and initiatives that link people with socio-economic opportunities in Africa.
+            </p>
+            <p class="max-w-xl w-1/3 mb-9 text-xl leading-relaxed">
+                We take the extra step to understand our partner’s vision and dreams; we challenge them and work together to bring their vision to life. Our dedicated project teams execute projects using agile methodology and are fully responsible for the final product and quality at every sprint. Our delivery process allows you to flexibly manage your priorities as the project goes on in a way that gives you maximum return on investment.
             </p>
 
-            <a href="#" class="btn capitalize">
-                Let's Talk About Your Project
-            </a>
+            <button class="mt-4">
+                <a href="#" class="btn capitalize">
+                    Learn More About Us
+                </a>
+            </button>
         </div>
         <div class="pt-12 px-12">
             <div class="relative" style="width: 380px">
-                <img class="w-full" src="{{asset('img/deco.png')}}" alt="" />
-                <div class="absolute inset-0 z-10 flex flex-col text-white items-center justify-center">
-                    <span class="text-xl opascity-50 mb-8">WE'RE A TEAM THAT</span>
-                    <p class="text-7xl font-bold">
-                        Delivers
-                    </p>
-                </div>
             </div>
         </div>
     </div>
@@ -31,7 +29,7 @@
         </p>
         <div class="flex items-center space-x-12">
             @php
-                $partners = ["care", "sahara", "dot",  "palladium", "fsdt", "hdif"];
+                $partners = ["care", "sahara", "dot"];
             @endphp
 
             @foreach($partners as $partner)
