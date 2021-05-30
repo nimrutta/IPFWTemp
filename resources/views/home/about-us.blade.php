@@ -29,14 +29,30 @@
         </p>
         <div class="flex items-center space-x-12">
             @php
-                $partners = ["care", "sahara", "dot"];
+                class Card
+                    {
+                        public $imageUrl;
+                        public $statistics;
+                        public $title;
+                        public $description;
+                    }
+                    $countries = new Card();
+                    $countries->imageUrl = 'red';
+                    $countries->statistics = '07';
+                    $countries->title = 'Countries Reached';
+                    $countries->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
+
+                    $cards = array($countries);
             @endphp
 
-            @foreach($partners as $partner)
+            @foreach($cards as $card)
                 @php
-                    $height = $partner == "palladium" ? "h-10" : "h-8";
+                    // $height = $partner == "palladium" ? "h-10" : "h-8";
                 @endphp
-                <img class="{{$height}}" src="{{asset('img/partners/' . $partner . '.png')}}" alt="" />
+                {{-- <img class="{{$height}}" src="{{asset('img/partners/' . $partner . '.png')}}" alt="" /> --}}
+                <h1>{{$card->statistics}}</h1>
+                <h3>{{$card->title}}</h3>
+                <p>{{$card->description}}</p>
             @endforeach
         </div>
     </div>
