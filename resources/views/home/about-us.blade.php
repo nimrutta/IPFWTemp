@@ -22,11 +22,8 @@
             </div>
         </div>
     </div>
-
-    <div class="pb-10 container flex flex-col items-center justify-center">
-        <p class="mb-5 text-lg">
-            Leading organisations trust us as their digital solutions partners
-        </p>
+    <br><br><br><br><br><br>
+    <div class="pb-10 mt-28 container flex flex-col items-start justify-center">
         <div class="flex items-center space-x-12">
             @php
                 class Card
@@ -50,9 +47,12 @@
                     // $height = $partner == "palladium" ? "h-10" : "h-8";
                 @endphp
                 {{-- <img class="{{$height}}" src="{{asset('img/partners/' . $partner . '.png')}}" alt="" /> --}}
-                <h1>{{$card->statistics}}</h1>
-                <h3>{{$card->title}}</h3>
-                <p>{{$card->description}}</p>
+                <div style="width: 23.8125rem">
+                    <div class="w-72 bg-gray-100 mb-8" style="height: 13rem"></div>
+                    <h1 class="text-7xl font-medium mb-4 block" style="color: #0D3462">{{$card->statistics}}</h1>
+                    <h3 class="text-3xl font-medium opacity-75">{{$card->title}}</h3>
+                    <p class="text-xl">{{$card->description}}</p>
+                </div>
             @endforeach
         </div>
     </div>
