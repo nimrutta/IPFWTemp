@@ -13,6 +13,7 @@
     @include('home.banner')
     @include('home.case-studies')
     @include('home.about-us')
+    @include('home.our-services')
     {{-- @include('home.webservices')
     @include('home.mobileservices')
     @include('home.dmservice')
