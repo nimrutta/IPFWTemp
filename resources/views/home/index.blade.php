@@ -14,6 +14,7 @@
     @include('home.case-studies')
     @include('home.about-us')
     @include('home.our-services')
+    @include('home.blogs1')
     {{-- @include('home.webservices')
     @include('home.mobileservices')
     @include('home.dmservice')
