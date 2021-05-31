@@ -15,6 +15,7 @@
     @include('home.about-us')
     @include('home.our-services')
     @include('home.blogs1')
+    @include('home.take-action')
     {{-- @include('home.webservices')
     @include('home.mobileservices')
     @include('home.dmservice')
