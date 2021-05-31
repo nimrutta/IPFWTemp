@@ -7,10 +7,16 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         // $blogs = Blog::all();
         // return view('home.index', compact('blogs'));
-        
+
         return view('home.index');
+    }
+    public function about()
+    {
+
+        return view('about.index');
     }
 }
