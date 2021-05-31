@@ -111,39 +111,3 @@
         </div>
     </div>
 </section>
-
-{{-- <section class="flex items-center" style="margin-top: 35rem">
-    <div class="pt-12 pb-16 relative w-full flex flex-col text-white"
-        style="background: #107E68"
-    >
-        <div class="relative z-10 flex-1 container flex items-center">
-            <div class="flex-1">
-                <img class="h-10 mb-6" src="{{asset('img/niajiri-logo-black.png')}}" alt="" />
-
-                <h1 class="text-3xl font-medium leading-snug mb-6">
-                    Revolutionising talent <span class="for-lg"><br/></span>
-                    management in Africa,<span class="for-lg"><br/></span>
-                    an incredible partnership <span class="for-lg"><br/></span>
-                    with Niajiri Limited
-                </h1>
-                <p class="max-w-lg mb-12 text-xl leading-relaxed">
-                    An interesting journey building the platform from an idea stage to now a calling product.
-                </p>
-    
-                <a href="#" class="btn capitalize py-2 px-4 bg-white border-white text-black">
-                    View Case Study
-                </a>
-            </div>
-            <div class="pt-12 px-12 w-3/5">
-                <div class="relative">
-                    <div class="bg-black rounded-xl py-5 px-6 relative">
-                        <div class="bg-gray-500 rounded overflow-hidden">
-                            <img class="w-full" src="{{asset('img/niajiri-bg.png')}}" alt="" />
-                        </div>
-                        <div class="w-5 h-5 border-4 opacity-20 rounded-full absolute inset-y-0 my-auto right-0 mr-0.5"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
