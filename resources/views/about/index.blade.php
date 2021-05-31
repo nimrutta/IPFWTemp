@@ -6,6 +6,38 @@
 
 @section('styles')
 {{-- <link rel="stylesheet" href="{{asset('css/home.css')}}" /> --}}
+<link rel="stylesheet" href="{{asset('css/Slider.css')}}" />
+<style>
+    #gallery img {
+        object-fit: contain;
+        height: inherit;
+        min-width: unset;
+        margin: 0 4px;
+    }
+
+    #gallery .Slider .SlideItem:not(.current) {
+        opacity: 1;
+    }
+
+    #gallery .Slider .SlideScroller {
+        align-items: flex-end;
+    }
+
+    #gallery .SlideMovers {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-top: 2.5rem;
+        margin-right: 10rem;
+        justify-content: flex-end;
+    }
+
+    #gallery .SlideMovers button {
+        border: 1px solid #ddd;
+        margin: 0 10px;
+        border-radius: 0;
+    }
+</style>
 @endsection
 
 @section('content')
@@ -15,5 +47,9 @@
 @endsection
 
 @section('scripts')
+<script src="{{asset('js/Slider.js')}}"></script>
+<script>
+    new Slider("#gallery > div");
+</script>
 
 @endsection
