@@ -1,16 +1,15 @@
 <section class="flex flex-col" style="margin-top: 32rem; background-color: #0d3462">
-    <div class="pt-0 flex-1 container flex items-center">
-        <div class="flex-1" style="margin-top: 7rem; color: #ffffff">
-            <h1 class="text-3xl font-meddium mb-6" style="font-weight: 500;">
+    <div class="pt-32 flex-1 container flex items-center">
+        <div class="flex-1" style="color: #ffffff">
+            <h1 class="text-3xl mb-6" style="font-weight: 500;">
                 /Our Services<span class="for-lg">
             </h1>
-            <p class="mb-9 text-5xl font-normal leading-relaxed" style="font-size: 3.125rem; width: 56rem">
+            <p class="text-5xl font-light leading-snug" style="width: 72rem">
                 We take pride in everything we do, our aim is to deliver the highest quality of work we give it our all.
             </p>
-            <br><br><br><br>
         </div>
     </div>
-    <div class="pb-10 mt-28 container flex flex-col items-start justify-center">
+    <div class="pb-10 mt-32 container flex flex-col items-start justify-center">
         <div class="flex items-center space-x-12">
             @php
                 class Tile
@@ -49,13 +48,13 @@
                 <div style="width: 23.8125rem">
                     {{-- <div class="w-72 bg-gray-100 mb-8" style="height: 13rem"></div>
                     <h1 class="text-7xl font-medium mb-4 block" style="color: #0D3462">{{$card->statistics}}</h1> --}}
-                    <h3 class="text-3xl font-medium mb-6" style="opacity: 0.80; font-size: 2.2rem; color: #999999">{{$card->title}}</h3>
+                    <h3 class="text-2xl font-medium mb-6" style="opacity: 0.80; font-size: 2.2rem; color: #999999">{{$card->title}}</h3>
                     <p class="text-xl text-white">{{$card->description}}</p>
                 </div>
             @endforeach
         </div>
     </div>
-    <div class="pb-10 mt-44 container flex flex-col items-start justify-center" style="margin-top: 10rem">
+    <div class="pb-10 mt-32 container flex flex-col items-start justify-center">
         <h1 class="text-3xl text-white" style="opacity: 50%; margin-bottom: 1.7rem">Technologies we use</h1>
         <div class="flex items-center space-x-12">
             @php
