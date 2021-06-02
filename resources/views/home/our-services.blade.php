@@ -20,19 +20,19 @@
                         public $description;
                     }
                     $website = new Tile();
-                    $website->imageUrl = 'red';
+                    $website->imageUrl = 'img/Africa.svg';
                     $website->statistics = '07';
                     $website->title = 'Website applications';
                     $website->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $mobile = new Card();
-                    $mobile->imageUrl = 'red';
+                    $mobile->imageUrl = 'img/Africa.svg';
                     $mobile->statistics = '193+';
                     $mobile->title = 'Mobile applications';
                     $mobile->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $xplatform = new Card();
-                    $xplatform->imageUrl = 'red';
+                    $xplatform->imageUrl = 'img/Africa.svg';
                     $xplatform->statistics = '123,768+';
                     $xplatform->title = 'Cross platform APPs';
                     $xplatform->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
@@ -66,31 +66,36 @@
                         public $description;
                     }
                     $android = new Icons();
-                    $android->imageUrl = 'red';
+                    $android->android = true;
+                    $android->imageUrl = 'img/logo 1.png';
                     $android->statistics = '07';
                     $android->title = 'Website applications';
                     $android->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $node = new Card();
-                    $node->imageUrl = 'red';
+                    $node->node = true;
+                    $node->imageUrl = 'img/logo 2.png';
                     $node->statistics = '193+';
                     $node->title = 'Mobile applications';
                     $node->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $laravel = new Card();
-                    $laravel->imageUrl = 'red';
+                    $laravel->laravel = true;
+                    $laravel->imageUrl = 'img/logo 3.png';
                     $laravel->statistics = '123,768+';
                     $laravel->title = 'Cross platform APPs';
                     $laravel->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $react = new Card();
-                    $react->imageUrl = 'red';
+                    $react->react = true;
+                    $react->imageUrl = 'img/logo 5.png';
                     $react->statistics = '123,768+';
                     $react->title = 'Cross platform APPs';
                     $react->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
 
                     $mongo = new Card();
-                    $mongo->imageUrl = 'red';
+                    $mongo->mongo = true;
+                    $mongo->imageUrl = 'img/logo 6.png';
                     $mongo->statistics = '123,768+';
                     $mongo->title = 'Cross platform APPs';
                     $mongo->description = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.';
@@ -101,10 +106,12 @@
             @foreach($cards as $card)
                 @php
                     // $height = $partner == "palladium" ? "h-10" : "h-8";
+                    $card->mongo ? "h-10" : $card->mongo ? "h-16" : $card->laravel : "h-12" : $card->mongo ? "h-16" : $card->laravel
                 @endphp
                 {{-- <img class="{{$height}}" src="{{asset('img/partners/' . $partner . '.png')}}" alt="" /> --}}
                 <div style="width: 16rem">
-                    <div class="w-72 bg-gray-300 mb-8" style="height: 3rem"></div>
+                    <img src="{{asset($card->imageUrl)}}" alt="" class="mb-8 h-8" style="height: 2rem" />
+                    {{-- <div class="w-72 bg-gray-300 mb-8" style="height: 3rem"></div> --}}
                 </div>
             @endforeach
         </div>
