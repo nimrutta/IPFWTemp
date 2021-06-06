@@ -55,7 +55,13 @@
                     {{-- <div class="w-72 bg-gray-100 mb-8" style="height: 13rem"></div> --}}
                     <img src="{{asset($card->imageUrl)}}" alt="" class="mb-8" style="height: auto; width: 19rem" />
                     <span><h5 class="inline font-medium" style="color: #0d3462">{{$card->author}}</h5><h5 class="inline ml-2" style="color: #A5A5A5">#{{$card->category}}</h5></span>
-                    <h1 class="font-medium mb-4 block" style="width: 19rem; color: #666666; font-size: 1.5rem">{{$card->statistics}}</h1>
+                    <h1 class="font-medium mb-4 block" 
+                    style="width: 19rem; color: #666666;
+                    font-size: 1.5rem; overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;">{{$card->statistics}}</h1>
                     {{-- <h3 class="text-3xl font-medium" style="opacity: 0.75">{{$card->title}}</h3> --}}
                     <p class="text-xl w-80" style="width: 19rem">{{$card->description}}</p>
                 </div>
