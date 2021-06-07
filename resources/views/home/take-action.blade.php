@@ -6,7 +6,7 @@
             </p>
             <p class="mb-11 text-3xl font-light leading-relaxed" style="font-size: 2rem; width: 100%; text-align: center; margin-bottom: 2.5rem">
                 Start with our free cost calculator            </p>
-            <button class="" style="background-color: #114582">
+            <button class="rounded-md" style="background-color: #114582; border-radius: 5px;">
                 <a href="#" class="btn capitalize">
                     Get Started
                 </a>
