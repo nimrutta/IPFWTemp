@@ -16,7 +16,7 @@
     @include('home.our-services')
     @include('home.blogs1')
     @include('home.take-action')
-    {{-- @include('home.footer1') --}}
+    @include('home.footer1')
     {{-- @include('home.footer') --}}
     {{-- @include('home.webservices')
     @include('home.mobileservices')
