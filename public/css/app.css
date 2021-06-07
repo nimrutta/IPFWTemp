@@ -788,6 +788,9 @@ video {
 .mb-11 {
 	margin-bottom: 2.75rem;
 }
+.mt-16 {
+	margin-top: 4rem;
+}
 .flex {
 	display: flex;
 }
@@ -851,6 +854,9 @@ video {
 .h-96 {
 	height: 24rem;
 }
+.h-3 {
+	height: 0.75rem;
+}
 .min-h-screen {
 	min-height: 100vh;
 }
@@ -898,6 +904,15 @@ video {
 }
 .w-52 {
 	width: 13rem;
+}
+.w-12 {
+	width: 3rem;
+}
+.w-24 {
+	width: 6rem;
+}
+.w-16 {
+	width: 4rem;
 }
 .max-w-6xl {
 	max-width: 72rem;
