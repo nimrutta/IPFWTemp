@@ -44,6 +44,7 @@
 @include('about.banner')
 @include('about.culture')
 @include('about.values')
+@include('about.way')
 @endsection
 
 @section('scripts')

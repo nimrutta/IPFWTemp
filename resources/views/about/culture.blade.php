@@ -1,6 +1,6 @@
-<section class="py-14 relative" style="background-color:#F9F9F9;">
-    <div class="container">
-        <h1 class="text-4xl font-bold mb-5">Our Culture</h1>
+<section style="background-color:#F9F9F9;">
+    <div class="container p-16">
+        <h1 class="text-3xl font-medium mb-5">/ Always learning, always growing</h1>
         <h2 class="text-xl">iPF Softwares is a family company in more ways than one. The culture is anchored in shared beliefs and ideals, acting for the common<br> good. As an organization, Ford believes everyone should have the freedom to move and pursue their dreams, and seeks to create a<br> culture of belonging for every employee.</h2>
         <div id="gallery" class="py-10">
             <div>
