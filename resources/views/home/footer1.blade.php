@@ -1,4 +1,4 @@
-<section class="ipf-home flex flex-row">
+<section class="ipf-home flex flex-row flex-wrap" style="background-color: #F7F7F7">
     @php
         $url = 'img/Deco footer.svg'
     @endphp
@@ -46,5 +46,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="h-9 flex items-center justify-center" style="background-color: #114582; flex-basis: 100%">
+        <span class="text-center text-white tracking-wide text-xs">
+            © 2021 ALL RIGHTS RESERVED IPF SOFTWARES | BRANDS MENTIONED ABOVE ARE PROPERTY OF THEIR RESPECTIVE OWNER
+        </span>
     </div>
 </section>
