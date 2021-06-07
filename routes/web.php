@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/work', [HomeController::class, 'work']);
 Route::get('/about', [HomeController::class, 'about']);
+
