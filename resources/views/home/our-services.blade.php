@@ -48,7 +48,7 @@
                 <div style="width: 23.8125rem">
                     {{-- <div class="w-72 bg-gray-100 mb-8" style="height: 13rem"></div>
                     <h1 class="text-7xl font-medium mb-4 block" style="color: #0D3462">{{$card->statistics}}</h1> --}}
-                    <h3 class="text-2xl font-medium mb-6 hover:text-red-500" style="opacity: 0.80; font-size: 1.8rem; color: #999999">{{$card->title}}</h3>
+                    <h3 class="text-2xl font-light mb-6 hover:text-blue-500" style="opacity: 0.80; font-size: 1.8rem; color: #999999">{{$card->title}}</h3>
                     <p class="text-xl text-white">{{$card->description}}</p>
                 </div>
             @endforeach
