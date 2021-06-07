@@ -18,5 +18,9 @@ class HomeController extends Controller
     public function work()
     {
         return view('work.index');
+    public function about()
+    {
+
+        return view('about.index');
     }
 }
