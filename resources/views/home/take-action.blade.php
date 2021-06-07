@@ -1,4 +1,4 @@
-<section class="flex flex-col" style="margin-top: 0; background-color: #448FE9; height: 24.375rem">
+<section class="flex flex-col relative" style="margin-top: 0; background-color: #448FE9; height: 24.375rem">
     <div class="pt-0 flex-1 container flex items-center justify-center h-96">
         <div class="flex-1 justify-center" style="color: #ffffff; text-align: center">
             <p class="mb-0text-5xl font-normal leading-relaxed" style="font-size: 3.125rem; width: 100%; text-align: center">
