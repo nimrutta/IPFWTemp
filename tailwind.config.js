@@ -22,7 +22,10 @@ module.exports = {
         },
         fontSize: {
           '80px': '5rem',
-      },
+        },
+        textColor: {
+          'ipfDarkBlue': '#114582',
+        },
       },
     },
     variants: {
