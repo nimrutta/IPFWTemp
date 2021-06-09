@@ -1,0 +1,9 @@
+tasks:
+  - init: composer install; npm install
+  - init: cp .env.example .env && php artisan key:generate
+    command: php artisan serve
+  - openMode: tab-after
+    command: npm run watch
+ports:
+- port: 8000
+- port: 3000
