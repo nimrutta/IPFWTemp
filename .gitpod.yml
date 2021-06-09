@@ -1,4 +1,6 @@
 tasks:
+  - before: sudo apt update && sudo apt install apache2
+  - before: sudo systemctl status apache2
   - init: composer install; npm install
   - init: cp .env.example .env && php artisan key:generate
     command: php artisan serve
